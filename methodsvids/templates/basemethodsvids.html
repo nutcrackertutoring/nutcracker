@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<header>
+
+	<title>{% block title %}{% endblock %}</title>
+
+{% include 'topmenu.html' %}
+
+</header>
+</head>
+
+
+<body>
+
+<div>
+	<div class="menu">
+		<ul>
+			<li class="subject">METHODS</li>
+			<li {% if section == "func_graph" %}class="active"{% endif %}><a href="">Functions and Graphs</a>
+				<ul>
+					<li><a href="../methods/cubic_graphs.html">Cubic Graphs</a></li>
+					<li><a href="../methods/exponential_log_graphs.html">Exponential and Log Graphs</a></li>
+					<li><a href="../methods/inverses1.html">Inverses 1</a></li>
+					<li><a href="../methods/simultaneous_equations.html">Simultaneous Equations: Number of Solutions</a></li>
+					<li><a href="../methods/matrix_multiplication.html">Matrix Multiplication</a></li>
+					<li><a href="../methods/matrix_transformations.html">Matrix Transformations</a></li>
+				</ul>
+			</li>
+
+			<li {% if section == "trig" %}class="active"{% endif %}><a href="">Trigonometry (Circular Function)</a>
+				<ul>
+					
+					<li><a href="../methods/exact_values.html">Exact Values</a></li>
+					<li><a href="../methods/trig_equations.html">Solving Trig Equations</a></li>
+					<li><a href="../methods/general_solutions.html">General Solutions</a></li>
+					<li><a href="../methods/sin_cos_graphs_without_horizontal.html">Sin and Cos Graph without Horizontal Translation</a></li>
+					<li><a href="../methods/sin_cos_graphs_with_horizontal.html">Sin and Cos Graph with Horizontal Translation</a></li>
+					<li><a href="../methods/tan_graphs.html">Graphing Tan Graphs</a></li>
+				</ul>
+			</li>
+
+			<li {% if section == "dif" %}class="active"{% endif %}><a href="">Calculus: Differentiation</a>
+				<ul>
+					<li><a href="../methods/dif_first_principles.html">Differentiation by First Principles</a></li>
+					<li><a href="../methods/limits.html">Limits</a></li>
+					<li><a href="../methods/dif_rule.html">Differentiation by Rule</a></li>
+					<li><a href="../methods/chain_rule.html">Chain Rule</a></li>
+					<li><a href="../methods/product_rule.html">Product Rule</a></li>
+					<li><a href="../methods/quotient_rule.html">Quotient Rule</a></li>
+					<li><a href="../methods/stat_points.html">Finding Stationary Points</a></li>
+					<li><a href="../methods/tangents_normals.html">Tangents and Normals</a></li>
+					<li><a href="../methods/derivative_antiderivative_graph.html">Derivative or Antiderivative from graph</a></li>
+				</ul>
+			</li>
+
+			<li {% if section == "antidif" %}class="active"{% endif %}><a href="">Calculus: Antiifferentiation</a>
+				<ul>
+					<li><a href="../methods/antidif_rule.html">Antidifferentiation by Rule</a></li>
+					<li><a href="../methods/integration_recognition.html">Integration by Recognition</a></li>
+				</ul>
+			</li>
+
+			<li {% if section == "discrete" %}class="active"{% endif %}><a href="">Discrete Probability</a>
+				<ul>
+					<li><a href="../methods/measures_of_centre.html">Measures of Centre</a></li>
+					<li><a href="../methods/measures_of_spread.html">Measures of Spread</a></li>
+					<li><a href="../methods/independant_events.html">Independant events</a></li>
+					<li><a href="../methods/mutually_exclusive_events.html">Mutually exclusive events</a></li>
+					<li><a href="../methods/conditional_probability.html">Conditional Probability</a></li>
+					<li><a href="../methods/combinatorics.html">Combinatorics</a></li>
+				</ul>
+			</li>
+
+			<li {% if section == "prob_dist" %}class="active"{% endif %}><a href="">Binomial, Continuous and Normal Distributions</a>
+				<ul>
+					<li><a href="../methods/binomial_distributions.html">Binomial Distributions</a></li>
+					<li><a href="../methods/finding_sample_size.html">Binomial: Finding Sample Size</a></li>
+					<li><a href="../methods/continuous_distributions.html">Continuous Distributions</a></li>
+					<li><a href="../methods/normal_distributions.html">Normal Distributions</a></li>
+					<li><a href="../methods/standard_normal.html">Standard Normal Distribution</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+{% block content %}
+
+{% endblock %}
+
+
+
+
+</body>
+
+
+</html>

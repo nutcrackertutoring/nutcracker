@@ -20,12 +20,34 @@ from django.contrib.auth import views as auth_views
 from django.views.generic.base import TemplateView
 from django.views.generic import RedirectView
 
+import core.views
 import accounts.views
+import methodsvids.views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    url(r'^$', core.views.index, name='home'),
+    url(r'^about/$', core.views.about, name='about'),
+    url(r'^tutoring/$', core.views.tutoring, name='tutoring'),
+    url(r'^contact/$', core.views.contact, name='contact'),
+    url(r'^videos/$', core.views.videos, name='videos'),
+    url(r'^admin/', admin.site.urls),
+
+
+    url(r'^science/videos/$', core.views.sciencevids, name='sciencevids'),
+
+
+
+    url(r'^methods/videos/$', methodsvids.views.methods, name='methods'),
+    url(r'^methods/videos/antidif_rule/$', methodsvids.views.antidif_rule, name='antidif_rule'),
+
+
+
     url(r'^login/$', auth_views.login, {'template_name': 'login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'template_name': 'logged_out.html'}, name='logout'),
+
     url(r'^signup/$', accounts.views.signup, name='signup'),
-    url(r'^$', accounts.views.index, name='home'),
+
+
+
+    url(r'^$', TemplateView.as_view(template_name='home.html'), name='home'),
 ]

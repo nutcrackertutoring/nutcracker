@@ -1,0 +1,58 @@
+
+{% extends "base.html" %}
+
+{% block title %}{{ 'Nutcracker Tutoring' }}{% endblock %}
+
+
+{% block content %}
+
+<p class="text">On this website you will find my Video Tutorials for the VCE Methods Course (other subjects to come soon) as well as information on how to get tutoring if you are struggling or want to get ahead. Check out the links below, or browse using the top menu.</p>
+
+<div class="columns">
+	<div class="box">
+		<img src="../static/basic/tutoring.jpg">
+		<p class="headinghome">Tutoring</p>
+
+		<p class="texthome">I offer tutoring from all year levels from Year 7 to Year 12 specialising in VCE maths and science.<br>
+		<a href="{% url "tutoring" %}"">Click here for more info about tutoring</a></p>
+	</div>
+	<div class="box">
+		<img src="../static/basic/about.jpg">
+		<p class="headinghome">About Me</p>
+
+		<p class="texthome">Hi, I'm Nathan.<br>
+		<a href="{% url "about" %}">Click here to learn more about me</a></p>
+	</div>
+	<div class="box">
+		<img src="../static/basic/videos.jpg">
+		<p class="headinghome">Videos</p>
+
+		<p class="texthome">I make video tutorials for a range of maths and science subjects covering all the topics studied in VCE.<br>
+		<a href="{% url "videos" %}">Click here to view the video tutorials</a></p> 
+	</div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

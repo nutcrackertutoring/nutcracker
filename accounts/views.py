@@ -20,7 +20,5 @@ def signup(request):
     return render(request, 'signup.html', {'form': form})
 
 
-def index(request):
-    return render(request,'index.html',{'section': 'home'})
 
 # Create your views here.

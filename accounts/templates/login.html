@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 
-{% block title %}Login{% endblock %}
+{% block title %}Login | Nutcracker Tutoring{% endblock %}
 
 {% block content %}
-  <h2>Login</h2>
+
+<h2>Login</h2>
+
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}

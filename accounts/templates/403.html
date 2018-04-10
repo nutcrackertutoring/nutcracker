@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Access Denied | Nutcracker Tutoring{% endblock %}
+
+{% block content %}
+
+<h2>Access Denied</h2>
+
+<p>Sorry, you need to be logged in with an account with permission to view that page. Please <a href="{% url 'login' %}">log in here</a> or if you think you should have access, please <a href="{% url 'contact' %}">contact me</a>.
+{% endblock %}

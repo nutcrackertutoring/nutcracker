@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django_use_email_as_username.apps.DjangoUseEmailAsUsernameConfig',
     
     'accounts',
+    'methodsvids',
+    'core',
 ]
 
 MIDDLEWARE = [
