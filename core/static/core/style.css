@@ -7,7 +7,7 @@ header {
     margin: 0px;
     color: white;
     background-color: #333333;
-    background-image: url("../static/basic/grey.jpg");
+    background-image: url("../static/core/grey.jpg");
 }
 
 header h1 {
@@ -102,7 +102,7 @@ body {
     background: #79C2FF;
     margin: 0px;
     padding: 0px;
-    background-image: url("../static/basic/blue.jpg");
+    background-image: url("../static/core/blue.jpg");
 }
 
 .menu ul {

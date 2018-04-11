@@ -21,66 +21,66 @@
 			<li class="subject">METHODS</li>
 			<li {% if section == "func_graph" %}class="active"{% endif %}><a href="">Functions and Graphs</a>
 				<ul>
-					<li><a href="../methods/cubic_graphs.html">Cubic Graphs</a></li>
-					<li><a href="../methods/exponential_log_graphs.html">Exponential and Log Graphs</a></li>
-					<li><a href="../methods/inverses1.html">Inverses 1</a></li>
-					<li><a href="../methods/simultaneous_equations.html">Simultaneous Equations: Number of Solutions</a></li>
-					<li><a href="../methods/matrix_multiplication.html">Matrix Multiplication</a></li>
-					<li><a href="../methods/matrix_transformations.html">Matrix Transformations</a></li>
+					<li><a href="{% url "cubic_graphs" %}">Cubic Graphs</a></li>
+					<li><a href="{% url "exp_log_graphs" %}">Exponential and Log Graphs</a></li>
+					<li><a href="{% url "inverses1" %}">Inverses 1</a></li>
+					<li><a href="{% url "simul_eqs" %}">Simultaneous Equations: Number of Solutions</a></li>
+					<li><a href="{% url "matrix_mult" %}">Matrix Multiplication</a></li>
+					<li><a href="{% url "matrix_transforms" %}">Matrix Transformations</a></li>
 				</ul>
 			</li>
 
 			<li {% if section == "trig" %}class="active"{% endif %}><a href="">Trigonometry (Circular Function)</a>
 				<ul>
 					
-					<li><a href="../methods/exact_values.html">Exact Values</a></li>
-					<li><a href="../methods/trig_equations.html">Solving Trig Equations</a></li>
-					<li><a href="../methods/general_solutions.html">General Solutions</a></li>
-					<li><a href="../methods/sin_cos_graphs_without_horizontal.html">Sin and Cos Graph without Horizontal Translation</a></li>
-					<li><a href="../methods/sin_cos_graphs_with_horizontal.html">Sin and Cos Graph with Horizontal Translation</a></li>
-					<li><a href="../methods/tan_graphs.html">Graphing Tan Graphs</a></li>
+					<li><a href="{% url "exact_values" %}">Exact Values</a></li>
+					<li><a href="{% url "trig_eqs" %}">Solving Trig Equations</a></li>
+					<li><a href="{% url "general_sols" %}">General Solutions</a></li>
+					<li><a href="{% url "sin_cos_without_horiz" %}">Sin and Cos Graph without Horizontal Translation</a></li>
+					<li><a href="{% url "sin_cos_with_horiz" %}">Sin and Cos Graph with Horizontal Translation</a></li>
+					<li><a href="{% url "tan_graphs" %}">Tan Graphs</a></li>
 				</ul>
 			</li>
 
 			<li {% if section == "dif" %}class="active"{% endif %}><a href="">Calculus: Differentiation</a>
 				<ul>
-					<li><a href="../methods/dif_first_principles.html">Differentiation by First Principles</a></li>
-					<li><a href="../methods/limits.html">Limits</a></li>
-					<li><a href="../methods/dif_rule.html">Differentiation by Rule</a></li>
-					<li><a href="../methods/chain_rule.html">Chain Rule</a></li>
-					<li><a href="../methods/product_rule.html">Product Rule</a></li>
-					<li><a href="../methods/quotient_rule.html">Quotient Rule</a></li>
-					<li><a href="../methods/stat_points.html">Finding Stationary Points</a></li>
-					<li><a href="../methods/tangents_normals.html">Tangents and Normals</a></li>
-					<li><a href="../methods/derivative_antiderivative_graph.html">Derivative or Antiderivative from graph</a></li>
+					<li><a href="{% url "dif_first_princ" %}">Differentiation by First Principles</a></li>
+					<li><a href="{% url "limits" %}">Limits</a></li>
+					<li><a href="{% url "dif_rule" %}">Differentiation by Rule</a></li>
+					<li><a href="{% url "chain_rule" %}">Chain Rule</a></li>
+					<li><a href="{% url "prod_rule" %}">Product Rule</a></li>
+					<li><a href="{% url "quot_rule" %}">Quotient Rule</a></li>
+					<li><a href="{% url "stat_points" %}">Finding Stationary Points</a></li>
+					<li><a href="{% url "tangents_normals" %}">Tangents and Normals</a></li>
+					<li><a href="{% url "der_antider_graph" %}">Derivative or Antiderivative from graph</a></li>
 				</ul>
 			</li>
 
-			<li {% if section == "antidif" %}class="active"{% endif %}><a href="">Calculus: Antiifferentiation</a>
+			<li {% if section == "antidif" %}class="active"{% endif %}><a href="">Calculus: Antidifferentiation</a>
 				<ul>
-					<li><a href="../methods/antidif_rule.html">Antidifferentiation by Rule</a></li>
-					<li><a href="../methods/integration_recognition.html">Integration by Recognition</a></li>
+					<li><a href="{% url "antidif_rule" %}">Antidifferentiation by Rule</a></li>
+					<li><a href="{% url "int_recog" %}">Integration by Recognition</a></li>
 				</ul>
 			</li>
 
 			<li {% if section == "discrete" %}class="active"{% endif %}><a href="">Discrete Probability</a>
 				<ul>
-					<li><a href="../methods/measures_of_centre.html">Measures of Centre</a></li>
-					<li><a href="../methods/measures_of_spread.html">Measures of Spread</a></li>
-					<li><a href="../methods/independant_events.html">Independant events</a></li>
-					<li><a href="../methods/mutually_exclusive_events.html">Mutually exclusive events</a></li>
-					<li><a href="../methods/conditional_probability.html">Conditional Probability</a></li>
-					<li><a href="../methods/combinatorics.html">Combinatorics</a></li>
+					<li><a href="{% url "measures_centre" %}">Measures of Centre</a></li>
+					<li><a href="{% url "measures_spread" %}">Measures of Spread</a></li>
+					<li><a href="{% url "indep_events" %}">Independant events</a></li>
+					<li><a href="{% url "mut_excl_events" %}"">Mutually exclusive events</a></li>
+					<li><a href="{% url "cond_prob" %}">Conditional Probability</a></li>
+					<li><a href="{% url "combinatorics" %}">Combinatorics</a></li>
 				</ul>
 			</li>
 
 			<li {% if section == "prob_dist" %}class="active"{% endif %}><a href="">Binomial, Continuous and Normal Distributions</a>
 				<ul>
-					<li><a href="../methods/binomial_distributions.html">Binomial Distributions</a></li>
-					<li><a href="../methods/finding_sample_size.html">Binomial: Finding Sample Size</a></li>
-					<li><a href="../methods/continuous_distributions.html">Continuous Distributions</a></li>
-					<li><a href="../methods/normal_distributions.html">Normal Distributions</a></li>
-					<li><a href="../methods/standard_normal.html">Standard Normal Distribution</a></li>
+					<li><a href="{% url "binom_dist" %}">Binomial Distributions</a></li>
+					<li><a href="{% url "finding_samp_size" %}">Binomial: Finding Sample Size</a></li>
+					<li><a href="{% url "cont_dist" %}">Continuous Distributions</a></li>
+					<li><a href="{% url "norm_dist" %}">Normal Distributions</a></li>
+					<li><a href="{% url "stand_norm" %}">Standard Normal Distribution</a></li>
 				</ul>
 			</li>
 		</ul>
