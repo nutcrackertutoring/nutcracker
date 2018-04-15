@@ -36,6 +36,7 @@ urlpatterns = [
     url(r'^login/$', auth_views.login, {'template_name': 'login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'template_name': 'logged_out.html'}, name='logout'),
     url(r'^signup/$', accounts.views.signup, name='signup'),
+    url(r'^signedup/$', accounts.views.signedup, name='signedup'),
 
 
 # SCIENCE

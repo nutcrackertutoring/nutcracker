@@ -14,11 +14,12 @@ def signup(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('home')
+            return redirect('signedup')
     else:
         form = SignUpForm()
     return render(request, 'signup.html', {'form': form})
 
-
+def signedup(request):
+    return render(request,'signedup.html')
 
 # Create your views here.
