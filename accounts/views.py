@@ -26,6 +26,9 @@ def signup(request):
 def signedup(request):
     return render(request,'signedup.html')
 
+def my_account(request):
+    return render(request,'my_account.html')
+
 def password_changed(request):
     return render(request,'password_changed.html')
 

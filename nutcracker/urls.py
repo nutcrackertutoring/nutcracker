@@ -39,7 +39,7 @@ urlpatterns = [
     url(r'^signedup/$', accounts.views.signedup, name='signedup'),
     url(r'^change_password/$', accounts.views.change_password, name='change_password'),
     url(r'^password_changed/$', accounts.views.password_changed, name='password_changed'),
-
+    url(r'^my_account/$', accounts.views.my_account, name='my_account'),
 
 # SCIENCE
     url(r'^science/videos/$', core.views.sciencevids, name='sciencevids'),

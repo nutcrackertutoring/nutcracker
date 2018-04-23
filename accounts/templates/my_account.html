@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}My Account | Nutcracker Tutoring{% endblock %}
+
+{% block content %}
+
+<h2>My Account</h2>
+
+<p>Here are your account details:<br>
+Email/Username: {{ user.email }}<br>
+First Name: {{ user.first_name }}<br><br>
+You have permission to view the following videos:
+<ul>
+{% if perms.methodsvids.view_methods %}
+<li>Methods</li>
+{% endif %}
+{% if perms.methodsvids.view_methods %}
+<li>Methods</li>
+{% endif %}
+</ul>
+
+<br>
+<br>
+Your password has been stored securely. <a href="{% url "change_password" %}">Click here</a> to change your password.</p>
+
+
+{% endblock %}
