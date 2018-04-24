@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'django_use_email_as_username.apps.DjangoUseEmailAsUsernameConfig',
+    'widget_tweaks',
     
     'accounts',
     'core',

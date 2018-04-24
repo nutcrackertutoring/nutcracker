@@ -373,17 +373,32 @@ textarea {
     height: 80px;
 }
 
-
-
-
-/*
 form {
-    width: 300px;
     padding: 0px 10px 10px 10px;
-    margin-left: 55%;
+    margin-right: 55%;
     margin-bottom: 40px;
 }
-*/
+
+form .field-name {
+    color: white;
+}
+
+form .help-text {
+    color: grey;
+    font-size: small;
+}
+
+form .error-text {
+    color: red;
+}
+
+form .form-field {
+    color: purple;
+}
+
+
+
+
 
 
 
