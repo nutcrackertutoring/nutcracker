@@ -47,6 +47,12 @@ INSTALLED_APPS = [
 
 ]
 
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
+LOGIN_URL = 'login'
+
+LOGIN_REDIRECT_URL = 'my_account'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -56,10 +62,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-AUTH_USER_MODEL = 'accounts.CustomUser'
-
-LOGIN_REDIRECT_URL = 'home'
 
 ROOT_URLCONF = 'nutcracker.urls'
 

@@ -32,6 +32,8 @@ urlpatterns = [
     url(r'^videos/$', core.views.videos, name='videos'),
     url(r'^admin/', admin.site.urls),
 
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/core/favicon.ico')),
+
 # ACCOUNTS
     url(r'^login/$', auth_views.login, {'template_name': 'login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'template_name': 'logged_out.html'}, name='logout'),
