@@ -6,15 +6,16 @@
 
 <h2>My Account</h2>
 
-<p>Here are your account details:<br>
+<p class="textabout">Here are your account details:<br>
 Email/Username: {{ user.email }}<br>
 First Name: {{ user.first_name }}<br><br>
 
 Your password has been stored securely. <a href="{% url "change_password" %}">Click here</a> to change your password.</p>
 <br>
 
-You have permission to view the following videos:
-<ul>
+<p class="textabout">
+You have permission to view the following videos:</p>
+<ul class="textabout">
 {% if perms.methodsvids.view_methods %}
 <li>Methods</li>
 {% endif %}
