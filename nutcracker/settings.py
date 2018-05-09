@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY', default='jh1yf91)^@^fjnq#qaf2xtces_*rs2juo@&i$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='.herokuapp.com, nutcrackerutoring.com.au, nutcrackertutoring.com', cast=Csv())
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='.herokuapp.com, nutcrackertutoring.com.au, nutcrackertutoring.com', cast=Csv())
 
 
 # Application definition
