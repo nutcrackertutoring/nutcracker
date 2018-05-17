@@ -10,5 +10,9 @@ def physics(request):
 def incline_plane(request):
     return render(request,'physics/incline_plane.html',{'section': 'motion'})
 
+@login_required
+@permission_required('physicsvids.view_physics', raise_exception=True)
+def newtons_laws(request):
+    return render(request,'physics/newtons_laws.html',{'section': 'motion'})
 
 # Create your views here.
