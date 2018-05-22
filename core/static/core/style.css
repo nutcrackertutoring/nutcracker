@@ -17,6 +17,11 @@ header h1 {
     font-size: 70px;   
 }
 
+header h1 a:link, a:visited, a:hover, a:active {
+    color: white;
+    text-decoration: none;
+}
+
 .login {
     color: white;
     margin: 0px;
@@ -246,6 +251,13 @@ body {
     font-size: 20px;
 }
 
+.textaccount {
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-size: 20px;
+}
+
 .textabout a {
     color: white;
     text-decoration: none;
@@ -382,8 +394,9 @@ h2 {
 }
 
 form {
-    padding: 20px 0px 0px 20px;
-    margin-left: 40%;
+    padding: 20px 0px 0px 0px;
+    width: 30%;
+    margin: auto;
 }
 
 form .field-name {
@@ -422,7 +435,11 @@ button:hover {
     color: #BC81FF;
 }
 
-
+.my_account {
+    display: block;
+    width: 40%;
+    margin: auto;
+}
 
 
 

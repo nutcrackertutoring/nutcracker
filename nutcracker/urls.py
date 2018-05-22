@@ -30,6 +30,7 @@ urlpatterns = [
     url(r'^tutoring/$', core.views.tutoring, name='tutoring'),
     url(r'^contact/$', core.views.contact, name='contact'),
     url(r'^videos/$', core.views.videos, name='videos'),
+    url(r'^test/$', core.views.test, name='test'),
     url(r'^admin/', admin.site.urls),
 
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/core/favicon.ico')),
