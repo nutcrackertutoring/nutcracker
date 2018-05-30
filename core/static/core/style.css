@@ -1,3 +1,6 @@
+
+/******** HEADER / BODY ********/
+
 @font-face {
     font-family: 'sanserifing';
     src:url("fonts/sanserifing.ttf");
@@ -8,6 +11,7 @@ header {
     color: white;
     background-color: #333333;
     background-image: url("grey.jpg");
+    background-size: cover;
 }
 
 header h1 {
@@ -17,36 +21,19 @@ header h1 {
     font-size: 70px;   
 }
 
-header h1 a:link, a:visited, a:hover, a:active {
+header h1 a:link, header h1 a:visited, header h1 a:hover, header h1 a:active {
     color: white;
     text-decoration: none;
 }
 
-.login {
-    color: white;
+body { 
+    background: #79C2FF;
     margin: 0px;
-    padding: 20px 20px 0px 0px;
-    list-style-type: none;
-    text-decoration: none;
-    float: right;
-    font-family: 'Quicksand';
-    font-weight: bold;
+    padding: 0px;
+    background-image: url("blue.jpg");
 }
 
-.login li {
-    display: inline;
-    padding: 5px;
-}
-
-.login li a {
-    text-decoration: none;
-    color: white;
-}
-
-.login li a:hover {
-    color: #BC81FF;
-}
-
+/******** TOP NAV ********/
 
 nav ul {
     margin: 0px;
@@ -103,12 +90,40 @@ nav ul li:hover ul {
     z-index: 1000;
 }
 
-body { 
-    background: #79C2FF;
+.active {
+    background: #0FE392;
+} /* Also for sidenav */
+
+
+/******** LOGIN / SIGNUP BAR ********/
+
+.login {
+    color: white;
     margin: 0px;
-    padding: 0px;
-    background-image: url("blue.jpg");
+    padding: 20px 20px 0px 0px;
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+    font-family: 'Quicksand';
+    font-weight: bold;
 }
+
+.login li {
+    display: inline;
+    padding: 5px;
+}
+
+.login li a {
+    text-decoration: none;
+    color: white;
+}
+
+.login li a:hover {
+    color: #BC81FF;
+}
+
+
+/******** SIDE MENU ********/
 
 .menu ul {
     list-style-type: none;
@@ -171,168 +186,50 @@ body {
 }
 
 
-.columns {
-    padding: 10px;
-    margin: 0px auto;
+
+
+
+/******** FORMS ********/
+
+form {
+    padding: 20px 0px 0px 0px;
+    width: 30%;
+    margin: auto;
+}
+
+form label {
+    font-family: 'Quicksand';
+    font-size: 16px;
+}
+
+form .help-text {
+    color: #F5F5F5;
+    font-size: 10px;
+}
+
+form .errorlist {
+    color: red;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form input {
+    font-family: 'Quicksand';
+    font-size: 16px;
+}
+
+button {
+    padding: 3px;
+    margin-left: 13px;
+    font-family: 'Quicksand';
+    font-size: 10px;
+    background-color: white;
     text-align: center;
 }
 
-.box {
-    background: white;
-    width: 250px;
-    height: 300px;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.box img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-.headinghome {
-    margin: 0;
-    font-family: 'Poppins';
-    padding: 0px 10px;
-}
-
-.text {
-    margin-top: 30px;
-    margin-left: 15%;
-    margin-right: 20%;
-    text-align: center;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Quicksand';
-    font-size: 20px;
-}
-
-.text a {
-    color: white;
-    text-decoration: none;
-}
-
-.text a:hover {
-    color: #BC81FF;
-}
-
-.texthome {
-    margin: 0;
-    padding: 3px 10px 0px 10px;
-    font-family: 'Quicksand';
-    font-size: 14px;
-    overflow: auto;
-}
-
-.texthome a {
-    color: #888;
-}
-
-.texthome a:hover {
-    color: #BC81FF;
-}
-
-.imgabout {
-    float: left;
-    margin: 0px 30px 20px 0px;
-}
-
-.textabout {
-    margin-top: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Quicksand';
-    font-size: 20px;
-}
-
-.textaccount {
-    text-align: left;
-    text-decoration: none;
-    font-family: 'Quicksand';
-    font-size: 20px;
-}
-
-.textabout a {
-    color: white;
-    text-decoration: none;
-}
-
-.textabout a:hover {
-    color: #BC81FF;
-}
-
-.textcontact {
-    margin: 30px 50px 35px 50px;
-    text-align: center;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Quicksand';
-    font-size: 20px;
-}
-
-.textmap {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Quicksand';
-    font-size: 18px;
-}
-
-
-.vid {    
-    margin: 0px 50px 35px 0px;
-    position: relative;
-    padding-bottom: 40%;
-    padding-top: 0;
-    height: 0;
-    overflow: hidden;
-}
-
-.vid iframe {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 93%;
-}
-
-
-.map {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 35%;
-    padding-top: 0;
-    height: 0;
-    width: 25%;
-    margin-left: 15%;
-    float: left;
-    margin-bottom: 50px;
-}
-
-.map iframe {
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    top: 0;
-    left: 0;
-}
-
-.contact {
-    margin-left: 55%
-}
-
-
-
-h4 {
-    padding: 0px;
-    margin: 0px 0px 6px 17px;
-    font-family: 'Poppins';
-    font-size: 24px;
+button:hover {
+    background-color: #BC81FF;
 }
 
 label {
@@ -359,30 +256,83 @@ textarea {
     height: 100px;
 }
 
-.submit {
-    width: 120px;
-    height: 30px;
-    border: none;
-    cursor: pointer;
-    background-color: white;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    box-shadow: 1px 1px 2px #111;
+
+/******** VIDEOS ********/
+
+.vid {    
+    margin: 0px 50px 35px 0px;
+    position: relative;
+    padding-bottom: 40%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
 }
 
-.submit:hover {
-    opacity: .7;
+.vid iframe {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 93%;
 }
 
 
-.active {
-    background: #0FE392;
+/******** MAP GOOGLE IMBED ********/
+
+.map {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 35%;
+    padding-top: 0;
+    height: 0;
+    width: 25%;
+    margin-left: 15%;
+    float: left;
+    margin-bottom: 50px;
 }
 
-.logo {
-    width: 80px;
-    height: 80px;
+.map iframe {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 0;
+    left: 0;
 }
+
+
+/******** HOME/ABOUT/CONTACT LAYOUT ********/
+
+.columns {
+    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.box {
+    background: white;
+    width: 250px;
+    height: 300px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgabout {
+    float: left;
+    margin: 0px 30px 20px 0px;
+}
+
+.contact {
+    margin-left: 55%
+}
+
+/******** TEXT STUFF ********/
 
 
 h2 {
@@ -393,46 +343,79 @@ h2 {
     text-align: center;
 }
 
-form {
-    padding: 20px 0px 0px 0px;
-    width: 30%;
-    margin: auto;
+h4 {
+    padding: 0px;
+    margin: 0px 0px 6px 17px;
+    font-family: 'Poppins';
+    font-size: 24px;
 }
 
-form .field-name {
-    color: white;
+
+p {
     font-family: 'Quicksand';
-    font-size: 16px;
+    font-size: 20px;
+    list-style-type: none;
+    text-decoration: none;
 }
 
-form .help-text {
-    color: #F5F5F5;
-    font-size: 10px;
-}
-
-form .error-text {
-    color: red;
+section ul li {
     font-family: 'Quicksand';
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-form .form-field {
-    font-family: 'Quicksand';
-    font-size: 16px;
-}
-
-button {
-    padding: 3px;
-    margin-left: 13px;
-    font-family: 'Quicksand';
-    font-size: 10px;
-    background-color: white;
+.text {
+    margin-top: 30px;
+    margin-left: 15%;
+    margin-right: 20%;
     text-align: center;
 }
 
-button:hover {
+.textabout {
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.textaccount {
+    text-align: left;
+}
+
+.textcontact {
+    margin: 30px 50px 35px 50px;
+    text-align: center;
+}
+
+.textmap {
+    margin: 0px;
+    padding: 0px;
+}
+
+p a {
+    color: white;
+    text-decoration: none;
+}
+
+p a:hover {
     color: #BC81FF;
+}
+
+.texthome a {
+    color: #888;
+}
+
+.headinghome {
+    margin: 0;
+    font-family: 'Poppins';
+    padding: 0px 10px;
+}
+
+.texthome {
+    margin: 0;
+    padding: 3px 10px 0px 10px;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    overflow: auto;
 }
 
 .my_account {
@@ -440,36 +423,4 @@ button:hover {
     width: 40%;
     margin: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
