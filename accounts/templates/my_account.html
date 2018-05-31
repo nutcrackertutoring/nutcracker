@@ -7,16 +7,16 @@
 <h2>My Account</h2>
 
 <section class="my_account">
-<p class="textaccount">Here are your account details:<br>
+<p class="account">Here are your account details:<br>
 <b>Email/Username:</b> {{ user.email }}<br>
 <b>First Name:</b> {{ user.first_name }}<br><br>
 
 Your password has been stored securely. <a href="{% url "change_password" %}">Click here</a> to change your password.</p>
 <br>
 
-<p class="textaccount">
+<p class="account">
 You have permission to view the following videos:</p>
-<ul class="textaccount">
+<ul class="account">
 {% if perms.methodsvids.view_methods %}
 <li>Methods</li>
 	{% if perms.physicsvids.view_physics %}

@@ -300,7 +300,7 @@ textarea {
 }
 
 
-/******** HOME/ABOUT/CONTACT LAYOUT ********/
+/******** HOME/ABOUT/CONTACT/MY ACOUNT LAYOUT ********/
 
 .columns {
     padding: 10px;
@@ -323,14 +323,21 @@ textarea {
     height: auto;
 }
 
-.imgabout {
+img.about, img.tutoring {
     float: left;
     margin: 0px 30px 20px 0px;
 }
 
-.contact {
+.contactinfo {
     margin-left: 55%
 }
+
+.my_account {
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
 
 /******** TEXT STUFF ********/
 
@@ -350,45 +357,17 @@ h4 {
     font-size: 24px;
 }
 
+h5 {
+    margin: 0;
+    font-family: 'Poppins';
+    padding: 0px 10px;
+}
 
 p {
     font-family: 'Quicksand';
     font-size: 20px;
     list-style-type: none;
     text-decoration: none;
-}
-
-section ul li {
-    font-family: 'Quicksand';
-    font-size: 20px;
-}
-
-.text {
-    margin-top: 30px;
-    margin-left: 15%;
-    margin-right: 20%;
-    text-align: center;
-}
-
-.textabout {
-    margin-top: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-}
-
-.textaccount {
-    text-align: left;
-}
-
-.textcontact {
-    margin: 30px 50px 35px 50px;
-    text-align: center;
-}
-
-.textmap {
-    margin: 0px;
-    padding: 0px;
 }
 
 p a {
@@ -400,17 +379,35 @@ p a:hover {
     color: #BC81FF;
 }
 
-.texthome a {
-    color: #888;
+section ul li {
+    font-family: 'Quicksand';
+    font-size: 20px;
 }
 
-.headinghome {
-    margin: 0;
-    font-family: 'Poppins';
-    padding: 0px 10px;
+p.home, p.videos {
+    margin-top: 30px;
+    margin-left: 15%;
+    margin-right: 20%;
+    text-align: center;
 }
 
-.texthome {
+p.loginpage, p.logout, p.password, p.signedup {
+    text-align: center;
+}
+
+p.about, p.tutoring {
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+p.contact {
+    margin: 30px 50px 35px 50px;
+    text-align: center;
+}
+
+p.homebox {
     margin: 0;
     padding: 3px 10px 0px 10px;
     font-family: 'Quicksand';
@@ -418,9 +415,21 @@ p a:hover {
     overflow: auto;
 }
 
-.my_account {
-    display: block;
-    width: 40%;
-    margin: auto;
+p.homebox a {
+    color: #888;
 }
+
+.textmap {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
 
