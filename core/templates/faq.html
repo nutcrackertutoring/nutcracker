@@ -1,0 +1,121 @@
+
+{% extends "base.html" %}
+
+{% block title %}{{ 'Frequently Asked Questions | Nutcracker Tutoring' }}{% endblock %}
+
+
+{% block content %}
+{% load static %}
+
+
+
+
+<h2>Tutoring</h2>
+
+<details>
+  <summary>How do I know if I need tutoring?</summary>
+<p>There’s no hard and fast rule as to who needs tutoring. If you feel that you could benefit from a little extra help and explanation, then tutoring might be for you!</p></details>
+
+<details>
+  <summary>I think I’ve just fallen a little bit behind, can you help catch me up?</summary>
+<p>Absolutely! As long as you know which topics you’ve covered I can re-teach them from scratch. It tends to go a lot faster than in class as I can go at your pace and spend time making sure you understand everything.</p></details>
+
+<details>
+  <summary>What do you do during a tutoring session?</summary>
+<p>Whatever you want really! I find the students that get the most out of my sessions are those who’ve done questions (eg from the textbook) at home, and bring in the ones they’re having trouble with. If you’ve missed a topic or completely forgotten one from earlier in the year I can also re-teach sections of the course.</p></details>
+
+<details>
+  <summary>Isn’t it only students who are failing that need tutoring?</summary>
+<p>Not at all! In the modern schooling system it’s hard for every student to get the attention they need from the teacher, so a private tutor makes sure that you understand all concepts properly and don’t fall behind. Also if you need to get certain scores to get into the course of your choice then I can help you achieve them.</p></details>
+
+<details>
+  <summary>How long is a normal lesson?</summary>
+<p>I usually do lessons of 1 hour, but if you prefer 1.5 or 2 hours, then I’m happy to do that too.</p></details>
+
+<details>
+  <summary>How often do students normally have lessons?</summary>
+<p>Usually once a week, though I do have students who have lessons more often, so can do twice a week if you want it.</p></details>
+
+<details>
+  <summary>I probably only need help occasionally - do I have to commit to lessons every week?</summary>
+<p>Nope, not at all. I do have a waiting list of students who have occasional lessons when one of my other students cancels and a spot opens up. Feel free to contact me even if you’re only looking for a couple of lessons!</p></details>
+
+<details>
+  <summary>What references can you provide?</summary>
+<p>I have plenty of past students and parents who have told me they are happy to speak to any new potential students so feel free to ask me and I’ll get you in contact with them. I also have a valid Working With Children Check.</p></details>
+
+<details>
+  <summary>How much do you charge for private tutoring?</summary>
+<p>At the time of writing, my rate is $60 per hour, though you can contact me to double check this.</p></details>
+
+<details>
+  <summary>Which days do you tutor?</summary>
+<p>I tutor Mondays-Thursdays, usually after school, though if you happen to finish early one day I can do earlier. I don’t tutor weekends as I’m often away and it can be disruptive if we miss lessons.</p></details>
+
+<details>
+  <summary>Do you have any special discounts or promotions?</summary>
+<p>I offer a free trial lesson as I know a big part of choosing a tutor is finding the right match. This way you can have an obligation-free lesson to see if we get along.</p></details>
+
+<details>
+  <summary>Ok, you got me! How do I set up a lesson?</summary>
+<p>Contact me either by phone on 0431 073 702 or by email at nathan.goldwaser@gmail.com and we can set up a first lesson. 
+If you have any doubts or concerns let me know when you contact me and I’ll do my best to address them.</p></details>
+
+
+<h2>Videos</h2>
+
+
+<details>
+  <summary>What do you cover in your videos?</summary>
+<p>I have videos on pretty much the entire Methods course and I am in the process of making ones covering the Physics course.<br>
+The Methods videos are designed to give you a background explanation of the theory, followed by at least one concrete example of how to apply what you have just leaned.<br>
+The Physics videos all have a physical demonstration (or as close as is possible) of the concept that they explain. This allows you to see the physics in action and hopefully makes it a bit more interesting! The videos explain the concept along with the main formulas, but do not cover the derivations of these formulas (not required in VCE). Usually an example is incorporated within the experiment.</p></details>
+
+<details>
+  <summary>How much does it cost to view the videos?</summary>
+<p>It’s free! At least for now...</p></details>
+
+<details>
+  <summary>Why do I have to log in to see the videos?</summary>
+<p>Although the videos are free to watch, I do restrict them to people who have signed up as I will eventually be moving to a paid model and want to get the website set up that way. Anyone who’s signed up before it switches over will continue to have access.</p></details>
+
+<details>
+  <summary>I signed up but it says access denied when I try to watch the videos - why?</summary>
+<p>I have to manually give you permission to see the videos, if you haven’t already, email me at nathan.goldwaser@gmail.com and I will update your permissions. You can check which videos you have access to in <a href="{% url "my_account" %}">My Account</a></p></details>
+
+<details>
+  <summary>I’m having trouble accessing the videos - what should I do?</summary>
+<p>Firstly, check <a href="{% url "my_account" %}">My Account</a> to see what videos you have access to. If it says you should have access but you still can’t view them, please send me an email at nathan.goldwaser@gmail.com along with which browser and device you are using and I will get back to you.</p></details>
+
+<details>
+  <summary>I have some topics I need a video for - can you make one?</summary>
+<p>Definitely! My aim is for these videos to be as useful as possible so if you have topics you’d like covered please let me know.</p></details>
+
+<details>
+  <summary>I found an error in one of your videos - should I tell you?</summary>
+<p>Definitely! Please email me at nathan.goldwaser@gmail.com stating which video it is and the error you’ve found.</p></details>
+
+
+<h2>Other</h2>
+
+<details>
+  <summary>Is this your full time job?</summary>
+<p>Yes, this is my main job. I also demonstrate/tutor First Year Physics Labs at Melbourne University.</p></details>
+
+<details>
+  <summary>I found a bug in your website - what should I do?</summary>
+<p>Please email me at nathan.goldwaser@gmail.com and tell me on which page it is and the error you’ve found.</p></details>
+
+<details>
+  <summary>I have another question that’s not listed here</summary>
+<p>You can contact me by phone on 0431 073 702 or by email at  nathan.goldwaser@gmail.com and I’ll get back to you ASAP.</p></details>
+<br>
+<br>
+
+
+{% endblock %}
+
+
+
+
+

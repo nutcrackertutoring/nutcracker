@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth.decorators import login_required
 
 from accounts.forms import SignUpForm
 from django.contrib.auth import get_user_model
@@ -26,12 +27,14 @@ def signup(request):
 def signedup(request):
     return render(request,'signedup.html')
 
+@login_required
 def my_account(request):
     return render(request,'my_account.html')
 
 def password_changed(request):
     return render(request,'password_changed.html')
 
+@login_required
 def change_password(request):
     if request.method == 'POST':
         form = PasswordChangeForm(request.user, request.POST)

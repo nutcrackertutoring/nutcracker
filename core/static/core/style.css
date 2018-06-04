@@ -6,7 +6,7 @@
     src:url("fonts/sanserifing.ttf");
 }
 
-header {
+header, footer {
     margin: 0px;
     color: white;
     background-color: #333333;
@@ -26,11 +26,14 @@ header h1 a:link, header h1 a:visited, header h1 a:hover, header h1 a:active {
     text-decoration: none;
 }
 
+
 body { 
     background: #79C2FF;
     margin: 0px;
     padding: 0px;
     background-image: url("blue.jpg");
+    font-family: 'Quicksand';
+    font-size: 100%;
 }
 
 /******** TOP NAV ********/
@@ -198,7 +201,6 @@ form {
 }
 
 form label {
-    font-family: 'Quicksand';
     font-size: 16px;
 }
 
@@ -209,20 +211,17 @@ form .help-text {
 
 form .errorlist {
     color: red;
-    font-family: 'Quicksand';
     font-weight: bold;
     font-size: 16px;
 }
 
 form input {
-    font-family: 'Quicksand';
     font-size: 16px;
 }
 
 button {
     padding: 3px;
     margin-left: 13px;
-    font-family: 'Quicksand';
     font-size: 10px;
     background-color: white;
     text-align: center;
@@ -239,7 +238,7 @@ label {
     font-family: 'Comfortaa';
 }
 
-input, textarea {
+input {
     width: 230px;
     height: 30px;
     background: white;
@@ -248,13 +247,9 @@ input, textarea {
     margin: 0px 0px 10px 20px;
     color: black;
     border-radius: 3px;
-    font-family: 'Quicksand';
     font-size: 14px;
 }
 
-textarea {
-    height: 100px;
-}
 
 
 /******** VIDEOS ********/
@@ -342,7 +337,7 @@ img.about, img.tutoring {
 /******** TEXT STUFF ********/
 
 
-h2 {
+h2 { /* login/account pages headings */
     font-family: 'Poppins';
     color: white;
     font-size: 20px;
@@ -350,24 +345,18 @@ h2 {
     text-align: center;
 }
 
-h4 {
-    padding: 0px;
-    margin: 0px 0px 6px 17px;
-    font-family: 'Poppins';
-    font-size: 24px;
-}
-
-h5 {
+h5 { /* box heading on home page*/
     margin: 0;
     font-family: 'Poppins';
     padding: 0px 10px;
 }
 
 p {
-    font-family: 'Quicksand';
     font-size: 20px;
     list-style-type: none;
     text-decoration: none;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 p a {
@@ -380,8 +369,13 @@ p a:hover {
 }
 
 section ul li {
-    font-family: 'Quicksand';
     font-size: 20px;
+}
+
+summary {
+    font-size: 22px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 p.home, p.videos {
@@ -410,7 +404,6 @@ p.contact {
 p.homebox {
     margin: 0;
     padding: 3px 10px 0px 10px;
-    font-family: 'Quicksand';
     font-size: 14px;
     overflow: auto;
 }
@@ -424,10 +417,29 @@ p.homebox a {
     padding: 0px;
 }
 
+blockquote {
+    font-style: italic;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 
 
+.test {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */
+}
 
+@media (min-width: 43.75em) {
+  .test {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */
+  }
+}
 
 
 

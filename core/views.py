@@ -18,6 +18,11 @@ def videos(request):
 
 @login_required
 @user_passes_test(lambda u: u.is_superuser)
+def faq(request):
+    return render(request,'faq.html',{'section': 'faq'})
+
+@login_required
+@user_passes_test(lambda u: u.is_superuser)
 def test(request):
 	return render(request,'test.html')
 

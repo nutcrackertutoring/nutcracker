@@ -32,6 +32,7 @@
 <nav>
 	<ul class="topnav" id="myTopnav">
 		<li {% if section == "contact" %}class="active"{% endif %}><a href="{% url "contact" %}">Contact</a></li>
+		<!--<li {% if section == "faq" %}class="active"{% endif %}><a href="{% url "faq" %}">FAQ</a></li>-->
 		<li 
 		{% if section == "videos" %}class="active"{% endif %}
 		{% if section == "func_graph" %}class="active"{% endif %}
@@ -40,7 +41,7 @@
 		{% if section == "antidif" %}class="active"{% endif %}
 		{% if section == "discrete" %}class="active"{% endif %}
 		{% if section == "prob_dist" %}class="active"{% endif %}
-		><a href="{% url "videos" %}">Video Tutorials <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+		><a href="{% url "videos" %}">Videos <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 			<ul>
 				<li><a href="{% url "methods" %}">Methods</a></li>
 				<li><a href="{% url "physics" %}">Physics</a></li>
