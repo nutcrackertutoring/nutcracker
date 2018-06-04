@@ -427,7 +427,7 @@ blockquote {
 
 
 .test {
-  font-size: 1em;
+  font-size: 24px;
   /* equivalent to 16px */
   line-height: 1.25;
   /* equivalent to 20px */
@@ -435,7 +435,7 @@ blockquote {
 
 @media (min-width: 43.75em) {
   .test {
-    font-size: 1em;
+    font-size: 16px;
     /* equivalent to 16px */
     line-height: 1.375;
     /* equivalent to 22px */
