@@ -34,6 +34,7 @@ body {
     background-image: url("blue.jpg");
     font-family: 'Quicksand';
     font-size: 100%;
+    width: 100%;
 }
 
 /******** TOP NAV ********/

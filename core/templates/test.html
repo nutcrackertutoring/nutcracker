@@ -1,20 +1,38 @@
 
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
 
-{% block title %}{{ 'Test Page | Nutcracker Tutoring' }}{% endblock %}
+<head>
 
 
-{% block content %}
+
+<meta charset="utf-8">
+
+	<title>{Test Page | Nutcracker Tutoring</title>
+
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}" />
+
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:b|Poppins:500|Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="shortcut icon" href="{% static 'core/favicon.ico' %}" />
+</head>
+
+
+
+
+
+<body>
 
 <span class="test">Here is some text that is so long Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
 
+</body>
 
-
-
-{% endblock %}
-
-
-
+</html>
 
 
 
