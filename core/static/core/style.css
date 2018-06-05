@@ -18,7 +18,12 @@ header h1 {
     margin: 0px;
     padding: 10px 0px 5px 20px;
     font-family: 'sanserifing', 'Flamenco';
+    font-size: 50px;   
+}
+@media (min-width: 1024px) {
+header h1 {
     font-size: 70px;   
+}
 }
 
 header h1 a:link, header h1 a:visited, header h1 a:hover, header h1 a:active {
@@ -49,8 +54,13 @@ nav ul {
 nav li {
     float: right;
     font-family: 'Poppins';
-    font-size: 20px;
+    font-size: 18px;
     color: white;
+}
+@media (min-width: 1024px) {
+nav li {
+    font-size: 20px;
+}
 }
 
 nav li a {
@@ -195,11 +205,8 @@ nav ul li:hover ul {
 
 /******** FORMS ********/
 
-form {
-    padding: 20px 0px 0px 0px;
-    width: 30%;
-    margin: auto;
-}
+
+
 
 form label {
     font-size: 16px;
@@ -285,6 +292,7 @@ input {
     margin-left: 15%;
     float: left;
     margin-bottom: 50px;
+    display: inline-block;
 }
 
 .map iframe {
@@ -322,16 +330,21 @@ input {
 img.about, img.tutoring {
     float: left;
     margin: 0px 30px 20px 0px;
+    max-width: 90%;
+    height: auto;
 }
 
 .contactinfo {
-    margin-left: 55%
+    margin-left: 5%;
+    display: inline-block;
 }
 
+@media (min-width: 768px) {
 .my_account {
     display: block;
-    width: 40%;
+    width: 60%;
     margin: auto;
+}
 }
 
 
@@ -359,12 +372,8 @@ p {
     margin-left: 5%;
     margin-right: 5%;
 }
-
 @media (min-width: 1024px) {
-    p {
-    font-size: 20px;
-    list-style-type: none;
-    text-decoration: none;
+p {
     margin-left: 10%;
     margin-right: 10%;
     }
@@ -381,6 +390,7 @@ p a:hover {
 
 section ul li {
     font-size: 20px;
+    margin-left: 5%;
 }
 
 summary {
@@ -391,22 +401,17 @@ summary {
 
 p.home, p.videos {
     margin-top: 30px;
+    text-align: center;
+}
+@media (min-width: 1024px) {
+p.home, p.videos {
     margin-left: 15%;
     margin-right: 20%;
-    text-align: center;
+}
 }
 
-p.loginpage, p.logout, p.password, p.signedup {
-    text-align: center;
-}
-
-p.about, p.tutoring {
+p.loginpage, p.logout, p.password, p.signedup, p.contact,p.about, p.tutoring {
     margin-top: 30px;
-    text-align: center;
-}
-
-p.contact {
-    margin: 30px 50px 35px 50px;
     text-align: center;
 }
 
