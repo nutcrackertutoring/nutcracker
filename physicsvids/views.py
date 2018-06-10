@@ -7,6 +7,11 @@ def physics(request):
 
 @login_required
 @permission_required('physicsvids.view_physics', raise_exception=True)
+def con_bodies(request):
+    return render(request,'physics/con_bodies.html',{'section': 'motion'})
+
+@login_required
+@permission_required('physicsvids.view_physics', raise_exception=True)
 def incline_plane(request):
     return render(request,'physics/incline_plane.html',{'section': 'motion'})
 
