@@ -10,8 +10,12 @@ header, footer {
     margin: 0px;
     color: white;
     background-color: #333333;
+}
+@media (min-width: 480px) {
+header, footer {
     background-image: url("grey.jpg");
     background-size: cover;
+}
 }
 
 header h1 {
@@ -36,10 +40,14 @@ body {
     background: #79C2FF;
     margin: 0px;
     padding: 0px;
-    background-image: url("blue.jpg");
-    font-family: 'Quicksand';
     font-size: 100%;
     width: 100%;
+    font-family: 'Quicksand';
+}
+@media (min-width: 480px) {
+    body { 
+    background-image: url("blue.jpg");
+}
 }
 
 /******** TOP NAV ********/
@@ -405,10 +413,6 @@ summary {
     margin-right: 5%;
 }
 
-p.home, p.videos {
-    margin-top: 30px;
-    text-align: center;
-}
 @media (min-width: 1024px) {
 p.home, p.videos {
     margin-left: 15%;
@@ -416,9 +420,13 @@ p.home, p.videos {
 }
 }
 
-p.loginpage, p.logout, p.password, p.signedup, p.contact,p.about, p.tutoring {
+p.home, p.videos, p.loginpage, p.logout, p.password, p.signedup, p.contact,p.about, p.tutoring {
     margin-top: 30px;
+}
+@media (min-width: 480px) {
+p.home, p.videos, p.loginpage, p.logout, p.password, p.signedup, p.contact,p.about, p.tutoring {
     text-align: center;
+}
 }
 
 p.homebox {
