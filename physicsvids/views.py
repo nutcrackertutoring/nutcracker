@@ -12,6 +12,11 @@ def con_bodies(request):
 
 @login_required
 @permission_required('physicsvids.view_physics', raise_exception=True)
+def electromag_induc(request):
+    return render(request,'physics/electromag_induc.html',{'section': 'electromag'})
+
+@login_required
+@permission_required('physicsvids.view_physics', raise_exception=True)
 def incline_plane(request):
     return render(request,'physics/incline_plane.html',{'section': 'motion'})
 
