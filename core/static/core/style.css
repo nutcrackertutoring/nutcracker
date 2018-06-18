@@ -26,7 +26,12 @@ header h1 {
 }
 @media (min-width: 1024px) {
 header h1 {
-    font-size: 70px;   
+    font-size: 70px;
+}
+} 
+@media (max-width: 480px) {
+header h1 {
+    font-size: 40px;
 }
 }
 
@@ -52,6 +57,11 @@ body {
 
 /******** TOP NAV ********/
 
+
+/*Orignal menu customised for mobile */
+
+
+
 nav ul {
     margin: 0px;
     padding: 0px;
@@ -60,7 +70,6 @@ nav ul {
 }
 
 nav li {
-    float: right;
     font-family: 'Poppins';
     font-size: 18px;
     color: white;
@@ -75,7 +84,8 @@ nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-decoration: none;
 }
 
@@ -87,25 +97,26 @@ nav li a:hover {
 
 nav li li {
 	position: relative;
-	float: left;
-    border-top: 1px solid white;
+	border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 nav li li a {
 	text-align: center;
 	text-decoration: none;
-	width: 168px;
+	width: 100%;
 	display: block;
 	background: #444444;
 }
 
 nav ul ul {
-	position: absolute;
 	visibility: hidden;
+    display: none;
 }
 
 nav ul li:hover ul {
 	visibility: visible;
+    display: block;
 }
 
 .topnav li:hover > ul{
@@ -115,6 +126,56 @@ nav ul li:hover ul {
 .active {
     background: #0FE392;
 } /* Also for sidenav */
+
+
+
+/* Change menu for desktop */
+@media (min-width : 740px) {
+nav ul {
+    float: right;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    padding: 15px;
+}
+nav li li {
+    border-bottom: none;
+}
+nav li li a {
+    width: 168px;  
+}
+nav ul ul {
+    position: absolute;
+}
+}
+
+
+
+#menu-icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+@media (max-width : 740px) {
+#menu-icon {
+    display: inline-block;
+    float: right;
+}
+
+nav ul {
+    display: none;
+}
+
+nav:hover > ul {
+    display: block;
+}
+}
 
 
 /******** LOGIN / SIGNUP BAR ********/
@@ -451,23 +512,6 @@ blockquote {
     margin-right: 10%;
 }
 
-
-
-.test {
-  font-size: 24px;
-  /* equivalent to 16px */
-  line-height: 1.25;
-  /* equivalent to 20px */
-}
-
-@media (min-width: 1024px) {
-  .test {
-    font-size: 16px;
-    /* equivalent to 16px */
-    line-height: 1.375;
-    /* equivalent to 22px */
-  }
-}
 
 
 

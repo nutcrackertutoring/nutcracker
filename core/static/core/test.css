@@ -141,8 +141,7 @@ nav li a {
     padding: 15px;
 }
 nav li li {
-    float: left;
-
+    border-bottom: none;
 }
 nav li li a {
     width: 168px;  
@@ -165,7 +164,7 @@ nav ul ul {
 
 @media (max-width : 740px) {
 #menu-icon {
-    display:inline-block;
+    display: inline-block;
     float: right;
 }
 
@@ -173,7 +172,7 @@ nav ul {
     display: none;
 }
 
-nav:hover ul.topnav {
+nav:hover > ul {
     display: block;
 }
 }
