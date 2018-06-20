@@ -12,7 +12,7 @@
 
 
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'core/test.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}" />
 
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:b|Poppins:500|Quicksand" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
@@ -22,70 +22,17 @@
 <link rel="shortcut icon" href="{% static 'core/favicon.ico' %}" />
 </head>
 
-<header>
-<div class="headerdiv">
-
-{% if user.is_authenticated %}
-<ul class="login">
-<li>Hi, {{ user.first_name }}
-<small><a href="{% url "my_account" %}">(My account)</a></small></li>
-<li>|</li>
-<li><a href="{% url "logout" %}">Logout</a></li>
-</ul>
-{% else %}
-<ul class="login">
-<li><a href="{% url "signup" %}">Sign up</a></li>
-<li>|</li>
-<li><a href="{% url "login" %}">Login</a></li>
-</ul>
-{% endif %}
-
-<h1>
-<a href="{% url "home" %}">Nutcracker Tutoring</a>
-</h1>
-
-<nav>
-
-
-
-<a href="#" id="menu-icon"><img src="{% static 'core/menu.png' %}" width="40" height="40"></a>
-<div style="clear: both;"></div>
-
-
-	<ul class="topnav" id="myTopnav">
-		<li {% if section == "contact" %}class="active"{% endif %}><a href="{% url "contact" %}">Contact</a></li>
-		<!--<li {% if section == "faq" %}class="active"{% endif %}><a href="{% url "faq" %}">FAQ</a></li>-->
-		<li 
-		{% if section == "videos" %}class="active"{% endif %}
-		{% if section == "func_graph" %}class="active"{% endif %}
-		{% if section == "trig" %}class="active"{% endif %}
-		{% if section == "dif" %}class="active"{% endif %}
-		{% if section == "antidif" %}class="active"{% endif %}
-		{% if section == "discrete" %}class="active"{% endif %}
-		{% if section == "prob_dist" %}class="active"{% endif %}
-		><a href="{% url "videos" %}">Videos <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-			<ul>
-				<li><a href="{% url "methods" %}">Methods</a></li>
-				<li><a href="{% url "physics" %}">Physics</a></li>
-			</ul>
-		</li>
-		<li {% if section == "tutoring" %}class="active"{% endif %}><a href="{% url "tutoring" %}">Tutoring</a></li>
-		<li {% if section == "about" %}class="active"{% endif %}><a href="{% url "about" %}">About</a></li>
-		<li {% if section == "home" %}class="active"{% endif %}><a href="{% url "home" %}">Home</a></li>
-	</ul>
-
-
-</nav>
-<div style="clear: both;"></div>
-
-
-</header>
 
 
 
 <body>
 
-<p>Here is some text that is so long Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+<h1>Contact</h1>
+<form role="form" action="" method="post">
+    {% csrf_token %}
+      {% include 'form_snippet.html' %}
+    <button type="submit">Submit</button>
+</form>
 
 </body>
 

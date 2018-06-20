@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^about/$', core.views.about, name='about'),
     url(r'^tutoring/$', core.views.tutoring, name='tutoring'),
     url(r'^contact/$', core.views.contact, name='contact'),
+    url(r'^contact/thanks/$', core.views.contact_form_submitted, name='contact_form_submitted'),
     url(r'^videos/$', core.views.videos, name='videos'),
     url(r'^faq/$', core.views.faq, name='faq'),
     url(r'^test/$', core.views.test, name='test'),
