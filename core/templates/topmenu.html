@@ -31,9 +31,10 @@
 
 <nav>
 
-<a href="#" id="menu-icon"><img src="{% static 'core/menu.png' %}" width="40" height="40"></a>
-<div style="clear: both;"></div>
 
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="label-toggle"><img src="{% static 'core/menu.png' %}" width="40" height="40"></label>
+<div style="clear: both;"></div>
 	<ul class="topnav" id="myTopnav">
 		<li {% if section == "home" %}class="active"{% endif %}><a href="{% url "home" %}">Home</a></li>
 

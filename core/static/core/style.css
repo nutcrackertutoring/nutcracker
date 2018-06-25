@@ -1,5 +1,12 @@
 
+html {
+    font-family: Arial, sans-serif;
+}
+
+
 /******** HEADER / BODY ********/
+
+
 
 @font-face {
     font-family: 'sanserifing';
@@ -154,18 +161,27 @@ nav ul ul {
 
 
 
+#menu-toggle {display: none;}
+
+.label-toggle {display: none;}
+
+
+#menu-toggle:checked ~ ul {
+    display: block;
+}
+
+
+
 #menu-icon {
     display: none;
-    width: 40px;
-    height: 40px;
 }
 
 
 
 
 @media (max-width : 600px) {
-#menu-icon {
-    display: inline-block;
+.label-toggle {
+    display: block;
     float: right;
 }
 
@@ -173,9 +189,7 @@ nav ul {
     display: none;
 }
 
-nav:hover > ul {
-    display: block;
-}
+
 }
 
 
@@ -298,6 +312,7 @@ form .errorlist {
 }
 
 form input, form textarea {
+    font-family: 'Comfortaa';
     font-size: 16px;
     width: 230px;
     background: white;
@@ -306,6 +321,10 @@ form input, form textarea {
     margin: 0px 0px 0px 0px;
     color: black;
     border-radius: 3px;
+}
+
+form textarea {
+    padding: 7px 7px;
 }
 
 form input {
@@ -377,7 +396,7 @@ button:hover {
 }
 
 .contact_form {
-    width: 400px;
+    width: 350px;
     height: 400px;
     margin-right: 50px;
     margin-bottom: 20px;
@@ -493,7 +512,7 @@ p.home, p.videos {
 p.home, p.videos, p.loginpage, p.logout, p.password, p.signedup, p.contact,p.about, p.tutoring {
     margin-top: 30px;
 }
-@media (min-width: 480px) {
+@media (min-width: 600px) {
 p.home, p.videos, p.loginpage, p.logout, p.password, p.signedup, p.contact,p.about, p.tutoring {
     text-align: center;
 }
