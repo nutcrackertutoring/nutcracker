@@ -6,23 +6,31 @@
 
 {% block content %}
 
-<p class="contact">   
-    I offer tutoring services from my house located in Elwood, walking distance from Ripponlea station. <br>
+<p class="center-resize">   
+To contact me you can fill out the form below or alternatively call me on <a href="tel:0431073702">0431 073 702</a> or email me at nathan.goldwaser@gmail.com. I offer tutoring services from my house located in Elwood, walking distance from Ripponlea station and various tram and bus routes.
+</p>
 
-    If you have any questions or enquiries feel free to contact me by email or phone :)
-</p><br>
 
+<div class="columns">
+
+<div class="contact_form" align="center">
+<form role="form" action="" method="post">
+    {% csrf_token %}
+
+      {% include 'form_snippet.html' %}
+    <button type="submit">Submit</button>
+</form>
+</div>
+
+
+ 
 <div class="map">
-   
+  
     <iframe width="400" height="350" frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=Elwood, Victoria, Australia, &t=&z=12&ie=UTF8&iwloc=&output=embed" marginwidth="0"><a class="addmaps" href="http://www.map-embed.com/wordpress-themes/"id="get-map-data" mce_href="http://maps.google.com/maps/api/js?sensor=false">map-embed.com</a><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></iframe>
 </div>
-
-
-<div class="contactinfo">
-     <p class="textmap">Nathan Goldwaser <br>
-    nathan.goldwaser@gmail.com <br>
-    0431 073 702 </p>
 </div>
+
+
 <br>
 
 

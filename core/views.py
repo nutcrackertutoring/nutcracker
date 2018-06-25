@@ -14,10 +14,45 @@ def tutoring(request):
     return render(request,'tutoring.html',{'section': 'tutoring'})
 
 def contact(request):
-    return render(request,'contact.html',{'section': 'contact'})
+    if request.method == 'POST':
+        form = ContactForm(data=request.POST)
 
-def contact_form_submitted(request):
-    return render(request,'contact_form_submitted.html')
+        if form.is_valid():
+            contact_name = request.POST.get(
+                'contact_name'
+            , '')
+            contact_email = request.POST.get(
+                'contact_email'
+            , '')
+            form_content = request.POST.get('content', '')
+
+            # Email the profile with the
+            # contact information
+            template = get_template('contact_template.txt')
+            context = {
+                'contact_name': contact_name,
+                'contact_email': contact_email,
+                'form_content': form_content,
+            }
+            content = template.render(context)
+
+            email = EmailMessage(
+                "New contact form submission",
+                content,
+                contact_email,
+                ['nathan.goldwaser@gmail.com'],
+                headers = {'Reply-To': contact_email }
+            )
+            email.send()
+            return redirect('contact_form_sent')
+        
+    else:
+        form = ContactForm()
+    return render(request, 'contact.html', {'form': form}, {'section': 'contact'})
+
+
+def contact_form_sent(request):
+    return render(request,'contact_form_sent.html')
 
 def videos(request):
     return render(request,'videos.html',{'section': 'videos'})
@@ -30,8 +65,6 @@ def faq(request):
 @login_required
 @user_passes_test(lambda u: u.is_superuser)
 def test(request):
-
-
     if request.method == 'POST':
         form = ContactForm(data=request.POST)
 
