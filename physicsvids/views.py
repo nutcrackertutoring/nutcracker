@@ -7,6 +7,11 @@ def physics(request):
 
 @login_required
 @permission_required('physicsvids.view_physics', raise_exception=True)
+def circ_mot_hor(request):
+    return render(request,'physics/circ_mot_hor.html',{'section': 'motion'})
+
+@login_required
+@permission_required('physicsvids.view_physics', raise_exception=True)
 def con_bodies(request):
     return render(request,'physics/con_bodies.html',{'section': 'motion'})
 

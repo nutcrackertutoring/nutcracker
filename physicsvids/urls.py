@@ -21,6 +21,7 @@ urlpatterns = [
 
 # All of these start with physics/ as defined in urls.py in nutcracker home directory
     url(r'^videos/$', physicsvids.views.physics, name='physics'),
+    url(r'^videos/circular-motion-horizontal-plane/$', physicsvids.views.circ_mot_hor, name='circ_mot_hor'),
     url(r'^videos/connected-bodies/$', physicsvids.views.con_bodies, name='con_bodies'),
     url(r'^videos/electromagnetic-induction/$', physicsvids.views.electromag_induc, name='electromag_induc'),
     url(r'^videos/incline-plane/$', physicsvids.views.incline_plane, name='incline_plane'),
