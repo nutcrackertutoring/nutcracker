@@ -41,15 +41,18 @@
 				</ul>
 			</li>
 
-
-
 			<li {% if section == "electromag" %}class="active"{% endif %}><a href="">Electromagnetism</a>
 				<ul>
-					<li><a href="{% url "electromag_induc" %}">Electromagnetic Induction (Flux, emf, Faraday's, Lenz's Laws)</a></li>
+					<li><a href="{% url "electromag_induc" %}">Electromagnetic Induction (Flux, emf, Faraday's & Lenz's Laws)</a></li>
+					<li><a href="{% url "rh_rules" %}">Right Hand Rules</a></li>
 				</ul>
 			</li>
 
-
+			<li {% if section == "waves" %}class="active"{% endif %}><a href="">Waves</a>
+				<ul>
+					<li><a href="{% url "wave_graphs" %}">Wave Graphs</a></li>
+				</ul>
+			</li>
 
 
 		</ul>

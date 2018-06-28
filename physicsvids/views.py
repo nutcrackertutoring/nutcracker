@@ -30,4 +30,13 @@ def incline_plane(request):
 def newtons_laws(request):
     return render(request,'physics/newtons_laws.html',{'section': 'motion'})
 
+@login_required
+@permission_required('physicsvids.view_physics', raise_exception=True)
+def rh_rules(request):
+    return render(request,'physics/rh_rules.html',{'section': 'electromag'})
+
+@login_required
+@permission_required('physicsvids.view_physics', raise_exception=True)
+def wave_graphs(request):
+    return render(request,'physics/wave_graphs.html',{'section': 'waves'})
 # Create your views here.
