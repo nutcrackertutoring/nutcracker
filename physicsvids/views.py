@@ -27,6 +27,11 @@ def incline_plane(request):
 
 @login_required
 @permission_required('physicsvids.view_physics', raise_exception=True)
+def muons(request):
+    return render(request,'physics/muons.html',{'section': 'relativity'})
+
+@login_required
+@permission_required('physicsvids.view_physics', raise_exception=True)
 def newtons_laws(request):
     return render(request,'physics/newtons_laws.html',{'section': 'motion'})
 

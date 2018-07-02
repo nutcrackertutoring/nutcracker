@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^videos/connected-bodies/$', physicsvids.views.con_bodies, name='con_bodies'),
     url(r'^videos/electromagnetic-induction/$', physicsvids.views.electromag_induc, name='electromag_induc'),
     url(r'^videos/incline-plane/$', physicsvids.views.incline_plane, name='incline_plane'),
+    url(r'^videos/muons/$', physicsvids.views.muons, name='muons'),
     url(r'^videos/newtons-3-laws/$', physicsvids.views.newtons_laws, name='newtons_laws'),
     url(r'^videos/right-hand-rules/$', physicsvids.views.rh_rules, name='rh_rules'),
     url(r'^videos/wave-graphs/$', physicsvids.views.wave_graphs, name='wave_graphs'),

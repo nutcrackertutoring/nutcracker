@@ -48,6 +48,12 @@
 				</ul>
 			</li>
 
+			<li {% if section == "relativity" %}class="active"{% endif %}><a href="">Special Relativity</a>
+				<ul>
+					<li><a href="{% url "muons" %}">Muons</a></li>
+				</ul>
+			</li>
+
 			<li {% if section == "waves" %}class="active"{% endif %}><a href="">Waves</a>
 				<ul>
 					<li><a href="{% url "wave_graphs" %}">Wave Graphs</a></li>

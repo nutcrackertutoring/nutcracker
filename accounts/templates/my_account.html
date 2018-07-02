@@ -26,7 +26,7 @@ You have permission to view the following videos:</p>
 	{% if perms.physicsvids.view_physics %}
 	<li>Physics</li>
 	{% else %}
-	<li>You currently do not have permission to view any videos. Please email me on nathan.goldwaser@gmail.com so I can update your permissions.</li>
+	<li>You currently do not have permission to view any videos. Please <a href="{% url "contact" %}">contact me</a> so I can update your permissions.</li>
 	{% endif %}
 {% endif %}
 
