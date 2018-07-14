@@ -5,6 +5,8 @@ from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth.decorators import login_required
 
+from django.contrib.auth.models import Group
+
 from accounts.forms import SignUpForm
 from django.contrib.auth import get_user_model
 User = get_user_model()
@@ -17,15 +19,19 @@ def signup(request):
             username = form.cleaned_data.get('email')
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
+            if request.POST.get("methods"):
+                g = Group.objects.get(name='methodsvids') 
+                g.user_set.add(user)
+                user.save()
+            if request.POST.get("physics"):
+                g = Group.objects.get(name='physicsvids') 
+                g.user_set.add(user)
+                user.save()
             login(request, user)
-            return redirect('signedup')
+            return redirect('my_account')
     else:
         form = SignUpForm()
     return render(request, 'signup.html', {'form': form})
-
-
-def signedup(request):
-    return render(request,'signedup.html')
 
 @login_required
 def my_account(request):

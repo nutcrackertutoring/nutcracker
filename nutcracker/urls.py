@@ -41,7 +41,6 @@ urlpatterns = [
     url(r'^login/$', auth_views.login, {'template_name': 'login.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'template_name': 'logged_out.html'}, name='logout'),
     url(r'^signup/$', accounts.views.signup, name='signup'),
-    url(r'^signedup/$', accounts.views.signedup, name='signedup'),
     url(r'^change_password/$', accounts.views.change_password, name='change_password'),
     url(r'^password_changed/$', accounts.views.password_changed, name='password_changed'),
     url(r'^my_account/$', accounts.views.my_account, name='my_account'),
