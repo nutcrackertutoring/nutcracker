@@ -36,6 +36,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/core/favicon.ico')),
+    url(r'^.well-known/pki-validation/B944D8D7627AA27588072F1CBC6D5E94.txt$', core.views.pki_validation),
+    url(r'^.well-known/pki-validation/$', core.views.pki_validation),
 
 # ACCOUNTS
     url(r'^login/$', auth_views.login, {'template_name': 'login.html'}, name='login'),

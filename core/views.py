@@ -4,6 +4,15 @@ from core.forms import ContactForm
 from django.core.mail import EmailMessage
 from django.template.loader import get_template
 
+from django.http import HttpResponse
+
+
+
+
+def pki_validation(request):
+    return HttpResponse('9416EF028A49E0960E254D331557BE80073E4B2D7AFEA19CACC9F57B726DAEB9 comodoca.com 5b4da70f75420', content_type="text/plain")
+
+
 def index(request):
     return render(request,'index.html',{'section': 'home'})
 
