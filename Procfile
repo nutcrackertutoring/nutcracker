@@ -1,1 +1,1 @@
-web: gunicorn nutcracker.wsgi
+web: newrelic-admin run-program gunicorn nutcracker.wsgi
