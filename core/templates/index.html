@@ -7,44 +7,34 @@
 {% block content %}
 {% load static %}
 
-<p class="center-resize">On this website you will find my Video Tutorials for the VCE Methods Course (other subjects to come soon) as well as information on how to get tutoring if you are struggling or want to get ahead. Check out the links below, or browse using the top menu.</p>
+<p class="center-resize">
+Struggling to keep up in maths, physics or chemistry? Need to get a good ATAR to get into that ideal course? Just need an extra helping hand here and there?<br><br>
 
-<div class="columns">
-	<div class="box">
-		<img src="{% static 'core/tutoring.jpg' %}">
-		<h5>Tutoring</h5>
+You’ve come to the right place!<br><br>
 
-		<p class="homebox">I offer tutoring from all year levels from Year 7 to Year 12 specialising in VCE maths and science.<br>
-		<a href="{% url "tutoring" %}"">Click here for more info about tutoring</a></p>
-	</div>
-	<div class="box">
-		<img src="{% static 'core/about.jpg' %}">
-		<h5>About Me</h5>
+Imagine maths, physics or chemistry coming easily and naturally to you, and you actually enjoying learning it. What if, instead of feeling overwhelmed in class, you felt comfortable and even excited?<br><br>
 
-		<p class="homebox">Hi, I'm Nathan.<br>
-		<a href="{% url "about" %}">Click here to learn more about me</a></p>
-	</div>
-	<div class="box">
-		<img src="{% static 'core/videos.jpg' %}">
-		<h5>Videos</h5>
+The rapid pace that schoolwork progresses, along with the amount of extra curricular activities that so many students do these days means it’s very easy to miss important basics.<br><br>
 
-		<p class="homebox">I make video tutorials for a range of maths and science subjects covering all the topics studied in VCE.<br>
-		<a href="{% url "videos" %}">Click here to view the video tutorials</a></p> 
-	</div>
-</div>
+And of course, as everyone knows, once you’ve missed something and fallen behind it’s very difficult to catch up on your own.<br><br>
 
-<blockquote>
-“Nathan has been absolutely fantastic for our son, he has improved his grades immensely. Noah just wishes he started tutoring earlier as Nathan has helped him really enjoy and understand year 12 Math and he was actually looking forward to the VCE maths exam!”<br>
-<b>-Lynette</b>
-</blockquote>
+That’s where I come in.<br><br>
 
-<blockquote>
-“Nathan tutored Rory through years 11 and 12 for maths methods, physics and chemistry VCE. 
-Rory appreciated being able to bring  to these tutorials anything that he needed help with, from going over material they were covering at school, going through past papers to CAS calculator use. 
-Nathan has a thorough understanding of the science and maths curriculum and how to teach it as well as modelling an approach to problem solving. 
-From our perspective as parents we were really happy that Rory had Nathan as a resource and that having a clear and relaxed teaching and communication style with there were never issues about being sent there against his will.”<br>
-<b>-Anna</b>
-</blockquote>
+With over 7 years’ experience in tutoring VCE students (also years 9 & 10) I can quickly identify where the gaps in your knowledge are and bring you up to speed. I can then take you from a place of playing catch-up, to a position where you are learning and consolidating the material at the same time as (or even ahead of) the rest of your class.<br><br>
+
+The quickest, most effective and most thorough way to do this is through private tutoring sessions. Tutoring sessions give you personalized help in the areas you need it the most, something no classroom can ever do. You will learn the content at a much faster rate and you will also learn the correct and most efficient ways to answer questions.<br><br>
+
+For more information on private tutoring, <a href="{% url 'tutoring' %}">click here</a>.
+If you’ve decided you’d like to give it a try, then <a href="{% url 'contact' %}">contact me</a>. Mention this website for a free trial lesson!<br><br>
+
+If tutoring isn’t for you, or you’ve contacted me but I don’t have any free slots at the moment, you can also use the videos I make and post on this website. They cover the entire Maths Methods course, and I’m currently making more to cover the Physics course. While they are not designed to learn the course from scratch, they are detailed enough that you can understand them with very little background knowledge.<br><br>
+
+In the future I will be charging for access to these videos, however at the moment you can access them for free - simply use sign up using the link at the top of this page - no payment details required! Anyone who signs up before I switch to a paid model will continue to have access when it changes over.<br><br>
+
+If you have any other questions, check out the <a href="{% url 'faq' %}">FAQ</a> or <a href="{% url 'contact' %}">contact me</a> :)
+</p>
+
+
 
 {% endblock %}
 

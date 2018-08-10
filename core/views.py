@@ -8,11 +8,6 @@ from django.http import HttpResponse
 
 
 
-
-def pki_validation(request):
-    return HttpResponse('9416EF028A49E0960E254D331557BE80073E4B2D7AFEA19CACC9F57B726DAEB9 comodoca.com 5b4da70f75420', content_type="text/plain")
-
-
 def index(request):
     return render(request,'index.html',{'section': 'home'})
 
@@ -66,8 +61,6 @@ def contact_form_sent(request):
 def videos(request):
     return render(request,'videos.html',{'section': 'videos'})
 
-@login_required
-@user_passes_test(lambda u: u.is_superuser)
 def faq(request):
     return render(request,'faq.html',{'section': 'faq'})
 

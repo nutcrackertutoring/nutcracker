@@ -170,6 +170,7 @@ nav li li a {
 }
 nav ul ul {
     position: absolute;
+    max-width: 350px;
 }
 .label-toggle {display: none;}
 }
@@ -507,12 +508,12 @@ p {
     }
 }
 
-p a {
+p a, section a {
     color: white;
     text-decoration: none;
 }
 
-p a:hover {
+p a:hover, section a:hover {
     color: #BC81FF;
 }
 
@@ -566,7 +567,13 @@ blockquote {
 }
 
 
+summary {
+    margin-top: 6px;
+    font-weight: bold;
+}
 
-
+details:not(summary) {
+    margin-left: 5%;
+}
 
 

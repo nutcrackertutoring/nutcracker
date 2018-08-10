@@ -36,11 +36,8 @@
 <label for="menu-toggle" class="label-toggle"><img src="{% static 'core/menu.png' %}" width="40" height="40"></label>
 <div style="clear: both;"></div>
 	<ul class="topnav" id="myTopnav">
-		<li {% if section == "home" %}class="active"{% endif %}><a href="{% url "home" %}">Home</a></li>
 
-		<li {% if section == "about" %}class="active"{% endif %}><a href="{% url "about" %}">About</a></li>
-
-		<li {% if section == "tutoring" %}class="active"{% endif %}><a href="{% url "tutoring" %}">Tutoring</a></li>
+		<li {% if section == "tutoring" %}class="active"{% endif %}><a href="{% url "tutoring" %}">Private Tutoring</a></li>
 
 		<li 
 		{% if section == "videos" %}class="active"{% endif %}
@@ -57,7 +54,9 @@
 			</ul>
 		</li>
 
-		<!--<li {% if section == "faq" %}class="active"{% endif %}><a href="{% url "faq" %}">FAQ</a></li>-->
+		<li {% if section == "faq" %}class="active"{% endif %}><a href="{% url "faq" %}">FAQ</a></li>
+
+		<li {% if section == "about" %}class="active"{% endif %}><a href="{% url "about" %}">About Me</a></li>
 
 		<li {% if section == "contact" %}class="active"{% endif %}><a href="{% url "contact" %}">Contact</a></li>
 		
